@@ -2,4 +2,5 @@ language: node_js
 node_js:
   - "6"
 # no dependency to install
-script: yarn test
+script:
+  - yarn test
