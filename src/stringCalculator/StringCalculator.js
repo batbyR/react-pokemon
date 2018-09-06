@@ -3,7 +3,7 @@ export const add = s => {
 
   //Check for delimeter
   if (s.startsWith("//")) {
-    //Match //[....]\n
+    //Match //[....]\n...
     const prefix = s.slice("3", s.indexOf("\n") - 1);
     let suffix = s.slice(s.indexOf("\n") + 1);
 
@@ -20,7 +20,7 @@ export const add = s => {
   }
 
   if (s.length === 0) {
-    return 0;
+    return 1;
   } else {
     //We don't care about "\n" character
     s = s.replace("\n", delimeter);
